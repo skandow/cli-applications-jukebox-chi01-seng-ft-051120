@@ -39,7 +39,7 @@ def play(songs)
       if song.include? user_response
       puts "Playing #{user_response}"
       verdict = true
-    end 
+      end 
     end 
     if verdict != true
       puts "Invalid input, please try again"
