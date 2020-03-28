@@ -30,10 +30,17 @@ end
 def play(songs)
   puts "Please enter a song name or number:"
   user_response = gets.strip 
+  verdict = nil 
   case user_response
   when user_response.is_a?(Integer) && user_response > 0 && user_response < 10 
     puts "Playing #{songs[user_response - 1]}"
   when user_response.is_a?(String)
     songs.each do |song|
-      if song.include?
+      if song.include? "#{user_response}"
+      puts "Playing #{user_response}"
+      verdict = true
+    end 
+    if verdict == false 
+      puts ""
+      
     
