@@ -33,7 +33,7 @@ def play(songs)
   converted_number = user_response.to_i
   verdict = false
   if converted_number > 0 && converted_number < 10 
-    puts "Playing #{songs[user_response - 1]}"
+    puts "Playing #{songs[converted_number - 1]}"
   elsif
     songs.each do |song|
       if song.include? user_response
