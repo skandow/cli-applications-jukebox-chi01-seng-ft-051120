@@ -42,6 +42,6 @@ def play(songs)
     end 
     if verdict != true
       puts "Invalid input, please try again"
-  
+  else puts "Invalid input, please try again"
       
     
