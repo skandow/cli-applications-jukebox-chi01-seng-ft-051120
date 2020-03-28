@@ -26,3 +26,8 @@ def list(songs)
   list_count += 1 
 end 
 end 
+
+def play(songs)
+  puts "Please enter a song name or number:"
+  user_response = gets.strip 
+  if 
