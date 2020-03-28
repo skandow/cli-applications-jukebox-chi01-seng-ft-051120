@@ -40,6 +40,7 @@ def play(songs)
       puts "Playing #{user_response}"
       verdict = true
     end 
+    end 
     if verdict != true
       puts "Invalid input, please try again"
     end 
