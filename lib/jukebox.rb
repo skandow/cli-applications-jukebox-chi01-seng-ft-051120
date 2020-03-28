@@ -31,7 +31,7 @@ def play(songs)
   puts "Please enter a song name or number:"
   user_response = gets.strip 
   verdict = false
-  if user_response.is_a?(Integer) && user_response > 0 && user_response < 10 
+  if user_response > 0 && user_response < 10 
     puts "Playing #{songs[user_response - 1]}"
   elsif user_response.is_a?(String)
     songs.each do |song|
