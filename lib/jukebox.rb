@@ -48,4 +48,6 @@ def play(songs)
   end 
 end 
       
-    
+def run(songs)
+  play(songs)
+end 
