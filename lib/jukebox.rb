@@ -34,5 +34,6 @@ def play(songs)
   when user_response.is_a?(Integer) && user_response > 0 && user_response < 10 
     puts "Playing #{songs[user_response - 1]}"
   when user_response.is_a?(String)
-    
+    songs.each do |song|
+      if song.include?
     
