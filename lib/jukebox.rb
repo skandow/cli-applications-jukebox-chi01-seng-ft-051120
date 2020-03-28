@@ -36,7 +36,7 @@ def play(songs)
     puts "Playing #{songs[user_response - 1]}"
   when user_response.is_a?(String)
     songs.each do |song|
-      if song.include? "#{user_response}"
+      if song.include? user_response
       puts "Playing #{user_response}"
       verdict = true
     end 
