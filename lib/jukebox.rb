@@ -18,3 +18,7 @@ def help
   puts "- play : lets you choose a song to play"
   puts "- exit : exits this program"
 end
+
+def list(songs)
+  list_count = 1 
+  while list_count =< songs.length
