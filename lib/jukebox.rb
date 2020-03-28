@@ -21,4 +21,8 @@ end
 
 def list(songs)
   list_count = 1 
-  while list_count =< songs.length
+  while list_count <= songs.length do 
+  puts "#{list_count}. #{songs[list_count - 1]}"
+  list_count += 1 
+end 
+end 
