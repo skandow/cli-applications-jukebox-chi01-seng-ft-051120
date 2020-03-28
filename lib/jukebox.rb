@@ -30,6 +30,7 @@ end
 def play(songs)
   puts "Please enter a song name or number:"
   user_response = gets.strip 
+  converted_number = user_response.to_i
   verdict = false
   if user_response > 0 && user_response < 10 
     puts "Playing #{songs[user_response - 1]}"
