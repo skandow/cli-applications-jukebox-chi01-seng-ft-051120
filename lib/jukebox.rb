@@ -32,9 +32,9 @@ def play(songs)
   user_response = gets.strip 
   converted_number = user_response.to_i
   verdict = false
-  if user_response > 0 && user_response < 10 
+  if converted_number > 0 && converted_number < 10 
     puts "Playing #{songs[user_response - 1]}"
-  elsif user_response.is_a?(String)
+  elsif
     songs.each do |song|
       if song.include? user_response
       puts "Playing #{user_response}"
